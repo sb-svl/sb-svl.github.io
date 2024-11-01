@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2e435a0988e855906d8f94be22aa860b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.css"/>
+    
+            <style>
+                #export {
+                    position: absolute;
+                    top: 5px;
+                    right: 10px;
+                    z-index: 999;
+                    background: white;
+                    color: black;
+                    padding: 6px;
+                    border-radius: 4px;
+                    font-family: 'Helvetica Neue';
+                    cursor: pointer;
+                    font-size: 12px;
+                    text-decoration: none;
+                    top: 90px;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2e435a0988e855906d8f94be22aa860b" ></div>
+        
+    <a href='#' id='export'>Export</a>
+</body>
+<script>
+    
+    
+            var map_2e435a0988e855906d8f94be22aa860b = L.map(
+                "map_2e435a0988e855906d8f94be22aa860b",
+                {
+                    center: [-6.524450067819891, 39.24738974082702],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_28adffd85f33bc908a1aab4cf8abf133 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_28adffd85f33bc908a1aab4cf8abf133.addTo(map_2e435a0988e855906d8f94be22aa860b);
+        
+    
+
+        function geo_json_44310f876edd70312f3852145ba243bd_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_44310f876edd70312f3852145ba243bd = L.geoJson(null, {
+                onEachFeature: geo_json_44310f876edd70312f3852145ba243bd_onEachFeature,
+            
+        });
+
+        function geo_json_44310f876edd70312f3852145ba243bd_add (data) {
+            geo_json_44310f876edd70312f3852145ba243bd
+                .addData(data);
+        }
+            geo_json_44310f876edd70312f3852145ba243bd_add({"bbox": [39.19498829972222, -6.8471799, 39.32969661019563, -6.143221833333333], "features": [{"bbox": [39.32969661019563, -6.215355977214133, 39.32969661019563, -6.215355977214133], "geometry": {"coordinates": [39.32969661019563, -6.215355977214133, 0.0], "type": "Point"}, "id": "0", "properties": {"Name": "Kibele Landfill Site", "descriptio": null, "name_photo": null}, "type": "Feature"}, {"bbox": [39.2210649, -6.846381599722221, 39.2210649, -6.846381599722221], "geometry": {"coordinates": [39.2210649, -6.846381599722221, 0.0], "type": "Point"}, "id": "1", "properties": {"Name": "old Vingunguti Dumpsite", "descriptio": "20240723_131353.jpg", "name_photo": "20240723_131353.jpg"}, "type": "Feature"}, {"bbox": [39.21995499972223, -6.8471799, 39.21995499972223, -6.8471799], "geometry": {"coordinates": [39.21995499972223, -6.8471799, 0.0], "type": "Point"}, "id": "2", "properties": {"Name": "Vingunguti", "descriptio": "\u003cimg style=\"max-width:500px;\" src=\"files/20240723_130620.jpg\"\u003e", "name_photo": "20240723_130620.jpg"}, "type": "Feature"}, {"bbox": [39.28387829972222, -6.796906599722222, 39.28387829972222, -6.796906599722222], "geometry": {"coordinates": [39.28387829972222, -6.796906599722222, 0.0], "type": "Point"}, "id": "3", "properties": {"Name": "Leakage hotspot - Palm Beach", "descriptio": "\u003cimg style=\"max-width:500px;\" src=\"files/20240723_145518.jpg\"\u003e", "name_photo": "20240723_145518.jpg"}, "type": "Feature"}, {"bbox": [39.28354159972222, -6.797043299999999, 39.28354159972222, -6.797043299999999], "geometry": {"coordinates": [39.28354159972222, -6.797043299999999, 0.0], "type": "Point"}, "id": "4", "properties": {"Name": "Leackage Hotspot - Palm Beach", "descriptio": "\u003cimg style=\"max-width:500px;\" src=\"files/20240723_150328.jpg\"\u003e", "name_photo": "20240723_150328.jpg"}, "type": "Feature"}, {"bbox": [39.21953659972223, -6.847136599722222, 39.21953659972223, -6.847136599722222], "geometry": {"coordinates": [39.21953659972223, -6.847136599722222, 0.0], "type": "Point"}, "id": "5", "properties": {"Name": "Recyclable Agregator Nabori", "descriptio": "\u003cimg style=\"max-width:500px;\" src=\"files/20240723_130223.jpg\"\u003e", "name_photo": "20240723_130223.jpg"}, "type": "Feature"}, {"bbox": [39.2198033, -6.152926599722224, 39.2198033, -6.152926599722224], "geometry": {"coordinates": [39.2198033, -6.152926599722224, 0.0], "type": "Point"}, "id": "6", "properties": {"Name": "Nipe Fagio Pilot Zanzibar", "descriptio": "\u003cimg style=\"max-width:500px;\" src=\"files/20240725_125622.jpg\"\u003e", "name_photo": "20240725_125622.jpg"}, "type": "Feature"}, {"bbox": [39.19498829972222, -6.1741216, 39.19498829972222, -6.1741216], "geometry": {"coordinates": [39.19498829972222, -6.1741216, 0.0], "type": "Point"}, "id": "7", "properties": {"Name": "Litter on beach", "descriptio": "\u003cimg style=\"max-width:500px;\" src=\"files/20240725_144405.jpg\"\u003e", "name_photo": "20240725_144405.jpg"}, "type": "Feature"}, {"bbox": [39.19843291666666, -6.163331972222221, 39.19843291666666, -6.163331972222221], "geometry": {"coordinates": [39.19843291666666, -6.163331972222221, 0.0], "type": "Point"}, "id": "8", "properties": {"Name": "Collection Point n\u00b025", "descriptio": "\u003cimg style=\"max-width:500px;\" src=\"files/20240725_134418.jpg\"\u003e", "name_photo": "20240725_134418.jpg"}, "type": "Feature"}, {"bbox": [39.21421430555556, -6.143221833333333, 39.21421430555556, -6.143221833333333], "geometry": {"coordinates": [39.21421430555556, -6.143221833333333, 0.0], "type": "Point"}, "id": "9", "properties": {"Name": "Transfer Station", "descriptio": "\u003cimg style=\"max-width:500px;\" src=\"files/20240725_142134.jpg\"\u003e", "name_photo": "20240725_142134.jpg"}, "type": "Feature"}, {"bbox": [39.3296149, -6.2149533, 39.3296149, -6.2149533], "geometry": {"coordinates": [39.3296149, -6.2149533, 0.0], "type": "Point"}, "id": "10", "properties": {"Name": "Kibele Landfill", "descriptio": "\u003cimg style=\"max-width:500px;\" src=\"files/20240726_104728.jpg\"\u003e", "name_photo": "20240726_104728.jpg"}, "type": "Feature"}, {"bbox": [39.28230829972222, -6.7723433, 39.28230829972222, -6.7723433], "geometry": {"coordinates": [39.28230829972222, -6.7723433, 0.0], "type": "Point"}, "id": "11", "properties": {"Name": "Skip (Coco Beach)", "descriptio": "Cocobeach3.jpg", "name_photo": "Cocobeach3.jpg"}, "type": "Feature"}, {"bbox": [39.2190316, -6.846948299999999, 39.2190316, -6.846948299999999], "geometry": {"coordinates": [39.2190316, -6.846948299999999, 0.0], "type": "Point"}, "id": "12", "properties": {"Name": "Illegal dumping site near river", "descriptio": "\u003cimg style=\"max-width:500px;\" src=\"files/20240723_122310.jpg\"\u003e", "name_photo": "20240723_122310.jpg"}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_44310f876edd70312f3852145ba243bd.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_44310f876edd70312f3852145ba243bd.addTo(map_2e435a0988e855906d8f94be22aa860b);
+        
+    
+            var options = {
+              position: "topleft",
+              draw: {"circle": false, "circlemarker": false, "marker": true, "polygon": true, "polyline": true, "rectangle": true},
+              edit: {"edit": true, "remove": true},
+            }
+                // FeatureGroup is to store editable layers.
+                var drawnItems_draw_control_1c518280fff3034de008beab3883ef7c =
+                    new L.featureGroup().addTo(
+                        map_2e435a0988e855906d8f94be22aa860b
+                    );
+
+            options.edit.featureGroup = drawnItems_draw_control_1c518280fff3034de008beab3883ef7c;
+            var draw_control_1c518280fff3034de008beab3883ef7c = new L.Control.Draw(
+                options
+            ).addTo( map_2e435a0988e855906d8f94be22aa860b );
+            map_2e435a0988e855906d8f94be22aa860b.on(L.Draw.Event.CREATED, function(e) {
+                var layer = e.layer,
+                    type = e.layerType;
+                var coords = JSON.stringify(layer.toGeoJSON());
+                layer.on('click', function() {
+                    alert(coords);
+                    console.log(coords);
+                });
+                drawnItems_draw_control_1c518280fff3034de008beab3883ef7c.addLayer(layer);
+            });
+            map_2e435a0988e855906d8f94be22aa860b.on('draw:created', function(e) {
+                drawnItems_draw_control_1c518280fff3034de008beab3883ef7c.addLayer(e.layer);
+            });
+
+            
+            document.getElementById('export').onclick = function(e) {
+                var data = drawnItems_draw_control_1c518280fff3034de008beab3883ef7c.toGeoJSON();
+                var convertedData = 'text/json;charset=utf-8,'
+                    + encodeURIComponent(JSON.stringify(data));
+                document.getElementById('export').setAttribute(
+                    'href', 'data:' + convertedData
+                );
+                document.getElementById('export').setAttribute(
+                    'download', "data.geojson"
+                );
+            }
+            
+        
+</script>
+</html>
